@@ -10,11 +10,11 @@ public class ClientUpdateStructureBlockUnlimit {
 
     @ModifyConstant(method = "<init>(Lnet/minecraft/network/FriendlyByteBuf;)V", constant = @Constant(intValue = 48), require = 0)
     public int reinitUpper(int value) {
-        return 512;
+        return 4096;
     }
 
     @ModifyConstant(method = "<init>(Lnet/minecraft/network/FriendlyByteBuf;)V", constant = @Constant(intValue = -48), require = 0)
     public int reinitLower(int value) {
-        return -512;
+        return -4096;
     }
 }

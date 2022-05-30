@@ -14,6 +14,6 @@ public class StructureBlockRenderMixin {
      */
     @ModifyConstant(method = "getViewDistance", constant = @Constant(intValue = 96), require = 0)
     public int getRenderDistance(int value) {
-        return 256;
+        return 2048;
     }
 }
